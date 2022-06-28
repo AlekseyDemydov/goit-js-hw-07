@@ -22,12 +22,6 @@ getGallery.insertAdjacentHTML("afterbegin", addList);
 getGallery.addEventListener("click", (e) => {
   e.preventDefault();
   const element = e.target.dataset.source;
-
-  const instance = basicLightbox.create(`
-    <img src="${element}" width="800" height="600">
-`);
-
-  instance.show();
 });
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
