@@ -19,12 +19,7 @@ const addList = galleryItems
   .join("");
 getGallery.insertAdjacentHTML("afterbegin", addList);
 
-getGallery.addEventListener("click", (e) => {
-  e.preventDefault();
-  const element = e.target.dataset.source;
-});
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
-  captionType: "alt",
 });
