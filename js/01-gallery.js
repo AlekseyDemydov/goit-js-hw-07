@@ -11,8 +11,8 @@ const addList = galleryItems
       description,
       original,
       preview,
-    }) => `<div class="gallery-item"><a class="gallery__link">
-<img class="gallery__image" href="${original}"
+    }) => `<div class="gallery-item"><a class="gallery__link" href="${original}">
+<img class="gallery__image" 
 src="${preview}" 
 data-source="${original}" 
 alt="${description}"  >
